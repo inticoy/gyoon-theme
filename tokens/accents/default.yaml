@@ -1,0 +1,4 @@
+# default.yaml — no overrides, use mode values as-is
+_accent:
+  name: ""
+  slug: ""

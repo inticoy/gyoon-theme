@@ -1,0 +1,323 @@
+# dark.yaml — Gyoon Dark mode: teal-grey bg + gold accent
+_mode:
+  name: "Dark"
+  slug: "dark"
+  isDark: true
+  parentScheme: "Darcula"
+  vscodeBase: "vs-dark"
+
+# ── UI backgrounds ──────────────────────────
+ui:
+  bg:             "#2d3b43"
+  bg_deep:        "#212b30"
+  bg_editor:      "#354550"
+  bg_panel:       "#212b30"
+  bg_toolbar:     "#2d3b43"
+  bg_tab_active:  "#354550"
+  bg_input:       "#384a56"
+  bg_popup:       "#29343b"
+  bg_popup_header: "#263238"
+  bg_completion:  "#313f47"
+  bg_notification: "#263238"
+  bg_hover:       "#ffffff10"
+  bg_selected:    "#ffffff40"
+  bg_selected_inactive: "#ffffff20"
+  bg_scrollbar_track: "#33434e"
+  bg_diff_separator: "#2d3b43"
+  bg_gutter:      "#2f3f4a"
+  bg_combobox:    "#3c4c55"
+  bg_breadcrumb_hovered: "#ffffff20"
+  bg_documentation: "#313f47"
+  bg_info_hint:   "#313f47"
+  bg_error_hint:  "#3d2020"
+  bg_warning_hint: "#3d3520"
+  bg_injected:    "#2d3b43"
+  bg_folded_text: "#ffffff10"
+  bg_inline_hint: "#ffffff10"
+  bg_inline_hint_active: "#ffffff20"
+  bg_search_result: "#ffffff20"
+  bg_write_search: "#ffffff30"
+  bg_text_search: "#ffa34295"
+  bg_matched_brace: "#e4d58c4e"
+  bg_unmatched_brace: "#3d2020"
+
+  fg:             "#ffffffc0"
+  fg_strong:      "#ffffff"
+  fg_muted:       "#ffffff80"
+  fg_disabled:    "#ffffff40"
+  fg_breadcrumb:  "#ffffff80"
+  fg_breadcrumb_inactive: "#ffffff60"
+  fg_folded:      "#ffffff80"
+  fg_inline_hint: "#ffffff60"
+  fg_inline_hint_active: "#ffffffa0"
+  fg_completion:  "#ffffffb3"
+  completion_match: "#a1fb00"
+  fg_not_used:    "#ffffff60"
+  fg_console_normal: "#ffffffc0"
+
+  border:         "#ffffff10"
+  separator:      "#ffffff10"
+  focus:          "#ffffff46"
+  focus_border:   "#ffffff46"
+
+  scrollbar_thumb: "#ffffff20"
+  scrollbar_thumb_hover: "#ffffff40"
+
+  caret:          "#ffc000"
+  caret_row:      "#0000003a"
+
+  line_numbers:   "#ffffff60"
+  line_number_active: "#ffbf00"
+
+  indent_guide:   "#ffffff28"
+  indent_guide_active: "#ffffff68"
+  whitespace:     "#ffffff20"
+  soft_wrap:      "#ffffff40"
+  tearline:       "#ffffff20"
+  method_separator: "#ffffff10"
+  right_margin:   "#ffffff10"
+  folded_border:  "#ffffff30"
+
+  selection_bg:   "#ffffff40"
+  selection_fg:   ""
+
+  annotations:    "#ffffff60"
+
+# ── Accent / brand ──────────────────────────
+accent:
+  primary:        "#ffd700"
+  secondary:      "#ffb300"
+  link:           "#7bd7d3"
+
+# ── Buttons ─────────────────────────────────
+button:
+  default_bg:     "#ffffff40"
+  default_fg:     "#ffffff"
+  default_border: "#ffffff30"
+  bg:             "#ffffff28"
+  fg:             "#ffffff"
+  border:         "#ffffff20"
+
+# ── Status colors ───────────────────────────
+status:
+  bar_bg:         "#2d3b43"
+  bar_border:     "#ffffff10"
+  bar_hover:      "#ffffff18"
+  error_fg:       "#ff5134"
+  warning_fg:     "#ffd100"
+  info_fg:        "#72afe6"
+  success:        "#2fc910"
+
+# ── Diagnostics ─────────────────────────────
+diagnostic:
+  error:          "#ff5134"
+  warning:        "#ffd100"
+  deprecated:     "#ffffff80"
+  error_bg:       "#3d2020"
+  error_border:   "#ff513440"
+  warning_bg:     "#3d3520"
+  search_match_bg: "#ffa34295"
+
+# ── VCS / diff ──────────────────────────────
+vcs:
+  added:          "#6da100"
+  modified:       "#c4a600"
+  deleted:        "#bc161e"
+  merged:         "#7bd7d3"
+  unknown:        "#73c991"
+  not_changed:    "#72afe6"
+  head_icon:      "#ffd700"
+  local_branch:   "#72db5c"
+  remote_branch:  "#7bd7d3"
+  tag_icon:       "#e2c08d"
+  current_branch_bg: "#ffffff10"
+  selected_branch_bg: "#ffffff20"
+  diff_inserted:  "#1ab00426"
+  diff_deleted:   "#ff000033"
+  diff_modified:  "#c4a60020"
+  diff_conflict:  "#ffd10020"
+
+# ── File colors ─────────────────────────────
+file_color:
+  yellow:         "#45403520"
+  green:          "#35453520"
+  blue:           "#35404520"
+  violet:         "#40354520"
+  orange:         "#45403020"
+  rose:           "#45353520"
+
+# ── Notification ────────────────────────────
+notification:
+  info_fg:        "#75beff"
+  warning_fg:     "#cca700"
+  error_fg:       "#f48771"
+
+# ── Progress ────────────────────────────────
+progress:
+  color:          "#2fc910"
+  indeterminate_end: "#72db5c"
+  track:          "#ffffff20"
+
+# ── Counter ─────────────────────────────────
+counter:
+  bg:             "#713b25"
+  fg:             "#ffffff"
+
+# ── Banner ──────────────────────────────────
+banner:
+  info_bg:        "#2d3b43"
+  warning_bg:     "#3d3520"
+  error_bg:       "#3d2020"
+
+# ── Icons ───────────────────────────────────
+icon:
+  grey:           "#ffffff80"
+  grey_inline:    "#ffffff60"
+  grey_inline_dark: "#ffffff40"
+  red:            "#ff5134"
+  yellow:         "#ffd700"
+  green:          "#72db5c"
+  blue:           "#72afe6"
+  pink:           "#d670d6"
+  purple:         "#bc3fbc"
+  black_text:     "#ffffff"
+  yellow_dark:    "#c4a600"
+  green_android:  "#6da100"
+  checkbox_bg:    "#3c4c55"
+  checkbox_bg_selected: "#72afe6"
+  checkbox_bg_disabled: "#2d3b43"
+  checkbox_fg_selected: "#ffffff"
+  checkbox_fg_disabled: "#ffffff40"
+  checkbox_border: "#ffffff30"
+  checkbox_border_selected: "#72afe6"
+  checkbox_border_disabled: "#ffffff20"
+  checkbox_focus_wide: "#72afe660"
+  checkbox_focus_thin: "#72afe6"
+
+# ── Syntax ──────────────────────────────────
+syntax:
+  text:           "#ffffff"
+  keyword:        "#ffd700"
+  function_decl:  "#b5db24"
+  function_call:  "#b5db24"
+  class_name:     "#72db5c"
+  class_ref:      "#72db5c"
+  interface:      "#72db5c"
+  type_param:     "#72db5c"
+  annotation:     "#72db5c"
+  annotation_attr: "#e2c08d"
+  string:         "#7bd7d3"
+  string_escape:  "#ffffff"
+  string_escape_invalid: "#ff5134"
+  string_template: "#ffb300"
+  variable:       "#97b8e2"
+  parameter:      "#e2c08d"
+  named_argument: "#e2c08d"
+  number:         "#ceffca"
+  constant:       "#ceffca"
+  enum_entry:     "#ceffca"
+  predefined:     "#ceffca"
+  comment:        "#808080"
+  doc_comment_tag: "#97b8e2"
+  doc_comment_tag_value: "#7bd7d3"
+  doc_markup:     "#97b8e2"
+  operator:       "#ffffffb0"
+  this_keyword:   "#ffd700"
+  metadata:       "#72db5c"
+  identifier:     "#ffffff"
+  label:          "#b5db24"
+  matched_brace_fg: "#ffd700"
+  unmatched_brace_fg: "#ff5134"
+  search_effect:  "#ffd700"
+  write_search_effect: "#ffb300"
+  text_search_effect: "#ffa342"
+  todo:           "#ffd700"
+  todo_stripe:    "#ffd700"
+
+  # HTML / XML
+  tag_name:       "#97b8e2"
+  attribute_name: "#ceffca"
+  attribute_value: "#7bd7d3"
+  tag_punctuation: "#ffffffb0"
+  entity_ref:     "#97b8e2"
+
+  # CSS
+  css_property:   "#ffffffb0"
+  css_value:      "#ceffca"
+  css_tag:        "#97b8e2"
+  css_class:      "#ceffca"
+  css_id:         "#b5db24"
+  css_pseudo:     "#ffffff"
+  css_function:   "#b5db24"
+  css_number:     "#ceffca"
+  css_color:      "#ceffca"
+  css_url:        "#7bd7d3"
+  css_keyword:    "#ffd700"
+
+  # JSON
+  json_key:       "#97b8e2"
+  json_string:    "#7bd7d3"
+  json_number:    "#ceffca"
+  json_keyword:   "#ffd700"
+
+  # YAML
+  yaml_key:       "#97b8e2"
+  yaml_value:     "#7bd7d3"
+  yaml_anchor:    "#b5db24"
+
+  # Markdown
+  md_header:      "#97b8e2"
+  md_bold:        "#ceffca"
+  md_italic:      "#ffd700"
+  md_code:        "#7bd7d3"
+  md_link_dest:   "#ffd700"
+  md_link_text:   "#b5db24"
+  md_block_quote: "#808080"
+  md_list_marker: "#97b8e2"
+  md_hr:          "#ffffff40"
+
+  # RegExp
+  regex_meta:     "#ffd700"
+  regex_char_class: "#97b8e2"
+  regex_quote:    "#7bd7d3"
+  regex_quantifier: "#ceffca"
+
+  # Shell
+  shell_external: "#b5db24"
+  shell_internal: "#b5db24"
+
+  # Console
+  console_normal: "#ffffffc0"
+  console_error:  "#ff5134"
+  console_input:  "#7bd7d3"
+  console_system: "#97b8e2"
+  log_error:      "#ff5134"
+  log_warning:    "#ffd100"
+  log_info:       "#72afe6"
+  log_debug:      "#ffffff80"
+
+  # Terminal
+  terminal_command: "#b5db24"
+
+  # Reassigned parameter
+  reassigned_param: "#e2c08d"
+  reassigned_param_effect: "#e2c08d"
+
+# ── VSCode-specific workbench colors ────────
+vscode:
+  activity_bar_bg: "#2d3b43"
+  activity_bar_active_bg: "#354550"
+  activity_bar_border: "#ffffff10"
+  sidebar_bg:     "#2d3b43"
+  minimap_bg:     "#2f3f4a"
+  peek_editor_bg: "#2f3f4a"
+  peek_result_bg: "#2d3b43"
+  tab_border:     "#2d3b43"
+  terminal_bg:    "#354550"
+  remote_bg:      "#2d3b43"
+  status_bar_bg:  "#2d3b43"
+  breadcrumb_bg:  "#354550"
+  editor_widget_bg: "#29343b"
+  button_bg:      "#ffd700"
+  button_fg:      "#000000"
+  input_bg:       "#384a56"

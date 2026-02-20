@@ -1,0 +1,17 @@
+# base.yaml — shared non-color tokens
+font_type:
+  normal: "0"
+  bold: "1"
+  italic: "2"
+  bold_italic: "3"
+
+effect_type:
+  underline: "1"
+  wave: "2"
+  strikethrough: "5"
+
+tree:
+  rowHeight: 24
+
+editor_tabs:
+  underlineHeight: 2

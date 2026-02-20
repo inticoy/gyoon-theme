@@ -1,0 +1,224 @@
+# ui.yaml — semantic tokens → IntelliJ .theme.json UI keys
+
+"*":
+  background:                                   ui.bg
+  foreground:                                   ui.fg
+  selectionBackground:                          ui.bg_selected
+  selectionForeground:                          ui.fg_strong
+  disabledBackground:                           ui.bg
+  disabledForeground:                           ui.fg_disabled
+  inactiveBackground:                           ui.bg
+  borderColor:                                  ui.border
+  separatorColor:                               ui.separator
+  focusColor:                                   ui.focus
+  focusedBorderColor:                           ui.focus_border
+
+"Panel.background":                             ui.bg_panel
+"MainToolbar.background":                       ui.bg
+"TitlePane.background":                         ui.bg
+"Editor.background":                            ui.bg_editor
+
+EditorTabs:
+  background:                                   ui.bg
+  underlinedTabBackground:                      ui.bg_tab_active
+  underlineColor:                               accent.primary
+  underlineHeight:                              __base.editor_tabs.underlineHeight
+  hoverBackground:                              ui.bg_hover
+  inactiveColoredFileBackground:                ui.bg
+
+ToolWindow:
+  Header:
+    background:                                 ui.bg
+    inactiveBackground:                         ui.bg
+  HeaderTab:
+    selectedBackground:                         ui.bg_selected_inactive
+    hoverBackground:                            ui.bg_hover
+    underlineColor:                             accent.primary
+  background:                                   ui.bg
+  "Button.selectedBackground":                  ui.bg_selected_inactive
+  "Button.hoverBackground":                     ui.bg_hover
+
+StatusBar:
+  background:                                   status.bar_bg
+  borderColor:                                  status.bar_border
+  hoverBackground:                              status.bar_hover
+
+NavBar:
+  borderColor:                                  ui.border
+
+List:
+  background:                                   ui.bg
+  selectionBackground:                          ui.bg_selected
+  selectionForeground:                          ui.fg_strong
+  selectionInactiveBackground:                  ui.bg_selected_inactive
+  hoverBackground:                              ui.bg_hover
+  hoverInactiveBackground:                      ui.bg_hover
+
+Tree:
+  background:                                   ui.bg
+  selectionBackground:                          ui.bg_selected
+  selectionForeground:                          ui.fg_strong
+  selectionInactiveBackground:                  ui.bg_selected_inactive
+  hoverBackground:                              ui.bg_hover
+  rowHeight:                                    __base.tree.rowHeight
+
+Table:
+  background:                                   ui.bg
+  stripeColor:                                  ui.bg_hover
+  selectionBackground:                          ui.bg_selected
+  selectionForeground:                          ui.fg_strong
+  hoverBackground:                              ui.bg_hover
+  gridColor:                                    ui.border
+
+ScrollBar:
+  Mac:
+    thumbColor:                                 ui.scrollbar_thumb
+    thumbBorderColor:                           ui.scrollbar_thumb
+    hoverThumbColor:                            ui.scrollbar_thumb_hover
+    hoverThumbBorderColor:                      ui.scrollbar_thumb_hover
+  thumbColor:                                   ui.scrollbar_thumb
+  thumbBorderColor:                             ui.scrollbar_thumb
+  hoverThumbColor:                              ui.scrollbar_thumb_hover
+  hoverThumbBorderColor:                        ui.scrollbar_thumb_hover
+  trackColor:                                   ui.bg_scrollbar_track
+  background:                                   ui.bg_scrollbar_track
+
+Button:
+  default:
+    startBackground:                            button.default_bg
+    endBackground:                              button.default_bg
+    foreground:                                 button.default_fg
+    focusedBorderColor:                         ui.focus_border
+    startBorderColor:                           button.default_border
+    endBorderColor:                             button.default_border
+  startBackground:                              button.bg
+  endBackground:                                button.bg
+  foreground:                                   button.fg
+  startBorderColor:                             button.border
+  endBorderColor:                               button.border
+
+ComboBox:
+  background:                                   ui.bg_combobox
+  nonEditableBackground:                        ui.bg_combobox
+  "ArrowButton.background":                     ui.bg_combobox
+  selectionBackground:                          ui.bg_selected
+
+TextField:
+  background:                                   ui.bg_input
+  selectionBackground:                          ui.bg_selected
+  selectionForeground:                          ui.fg_strong
+
+TextArea:
+  background:                                   ui.bg_input
+
+SearchEverywhere:
+  "Header.background":                          ui.bg_popup
+  "SearchField.background":                     ui.bg_input
+  "Tab.selectedBackground":                     ui.bg_selected
+  "Tab.selectedForeground":                     ui.fg_strong
+
+Popup:
+  background:                                   ui.bg_popup
+  "Header.activeBackground":                    ui.bg_popup_header
+  "Header.inactiveBackground":                  ui.bg_popup_header
+  borderColor:                                  ui.border
+  separatorColor:                               ui.separator
+
+CompletionPopup:
+  background:                                   ui.bg_completion
+  selectionBackground:                          ui.bg_selected
+  matchForeground:                              ui.completion_match
+  foreground:                                   ui.fg_completion
+
+ProgressBar:
+  progressColor:                                progress.color
+  indeterminateStartColor:                      progress.color
+  indeterminateEndColor:                        progress.indeterminate_end
+  trackColor:                                   progress.track
+
+Notification:
+  background:                                   ui.bg_notification
+  borderColor:                                  ui.border
+  errorBackground:                              diagnostic.error_bg
+  errorBorderColor:                             diagnostic.error_border
+  errorForeground:                              ui.fg
+
+NotificationToolWindow:
+  "newNotification.background":                 ui.bg_notification
+  informativeForeground:                        notification.info_fg
+  warningForeground:                            notification.warning_fg
+  errorForeground:                              notification.error_fg
+
+SearchMatch:
+  startBackground:                              diagnostic.search_match_bg
+  endBackground:                                diagnostic.search_match_bg
+
+Debugger:
+  "ChangeValue.background":                     ui.bg_popup_header
+
+ActionButton:
+  hoverBackground:                              ui.bg_selected_inactive
+  pressedBackground:                            ui.bg_selected
+  hoverBorderColor:                             "#00000000"
+
+"ToolBar.background":                           ui.bg_toolbar
+"Spinner.background":                           ui.bg_input
+"Link.activeForeground":                        accent.link
+"Link.hoverForeground":                         accent.link
+"Link.pressedForeground":                       accent.link
+"Link.visitedForeground":                       accent.link
+"ParameterInfo.background":                     ui.bg_completion
+"ParameterInfo.foreground":                     ui.fg_completion
+"ParameterInfo.currentParameterForeground":     accent.primary
+"GotItTooltip.background":                      ui.bg_notification
+"Counter.background":                           counter.bg
+"Counter.foreground":                           counter.fg
+"Banner.infoBackground":                        banner.info_bg
+"Banner.warningBackground":                     banner.warning_bg
+"Banner.errorBackground":                       banner.error_bg
+"Borders.color":                                ui.border
+"Borders.ContrastBorderColor":                  ui.border
+"VersionControl.Log.Commit.currentBranchBackground": vcs.current_branch_bg
+"VersionControl.GitLog.headIconColor":          vcs.head_icon
+"VersionControl.GitLog.localBranchIconColor":   vcs.local_branch
+"VersionControl.GitLog.remoteBranchIconColor":  vcs.remote_branch
+"VersionControl.GitLog.tagIconColor":           vcs.tag_icon
+"VersionControl.FileHistory.Commit.selectedBranchBackground": vcs.selected_branch_bg
+"FileColor.Yellow":                             file_color.yellow
+"FileColor.Green":                              file_color.green
+"FileColor.Blue":                               file_color.blue
+"FileColor.Violet":                             file_color.violet
+"FileColor.Orange":                             file_color.orange
+"FileColor.Rose":                               file_color.rose
+
+# ── Icons ───────────────────────────────────
+icons:
+  ColorPalette:
+    "Actions.Grey":                             icon.grey
+    "Actions.Red":                              icon.red
+    "Actions.Yellow":                           icon.yellow
+    "Actions.Green":                            icon.green
+    "Actions.Blue":                             icon.blue
+    "Actions.GreyInline":                       icon.grey_inline
+    "Actions.GreyInline.Dark":                  icon.grey_inline_dark
+    "Objects.Grey":                             icon.grey
+    "Objects.RedStatus":                        icon.red
+    "Objects.Red":                              icon.red
+    "Objects.Pink":                             icon.pink
+    "Objects.Yellow":                           icon.yellow
+    "Objects.Green":                            icon.green
+    "Objects.Blue":                             icon.blue
+    "Objects.Purple":                           icon.purple
+    "Objects.BlackText":                        icon.black_text
+    "Objects.YellowDark":                       icon.yellow_dark
+    "Objects.GreenAndroid":                     icon.green_android
+    "Checkbox.Background.Default":              icon.checkbox_bg
+    "Checkbox.Background.Selected":             icon.checkbox_bg_selected
+    "Checkbox.Background.Disabled":             icon.checkbox_bg_disabled
+    "Checkbox.Foreground.Selected":             icon.checkbox_fg_selected
+    "Checkbox.Foreground.Disabled":             icon.checkbox_fg_disabled
+    "Checkbox.Border.Default":                  icon.checkbox_border
+    "Checkbox.Border.Selected":                 icon.checkbox_border_selected
+    "Checkbox.Border.Disabled":                 icon.checkbox_border_disabled
+    "Checkbox.Focus.Wide":                      icon.checkbox_focus_wide
+    "Checkbox.Focus.Thin":                      icon.checkbox_focus_thin

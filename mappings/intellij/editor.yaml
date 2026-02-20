@@ -1,0 +1,437 @@
+# editor.yaml — semantic tokens → IntelliJ .xml editor scheme attributes
+
+colors:
+  CARET_COLOR:                          ui.caret
+  CARET_ROW_COLOR:                      ui.caret_row
+  CONSOLE_BACKGROUND_KEY:               ui.bg_deep
+  GUTTER_BACKGROUND:                    ui.bg_gutter
+  INDENT_GUIDE:                         ui.indent_guide
+  LINE_NUMBERS_COLOR:                   ui.line_numbers
+  LINE_NUMBER_ON_CARET_ROW_COLOR:       ui.line_number_active
+  METHOD_SEPARATORS_COLOR:              ui.method_separator
+  RIGHT_MARGIN_COLOR:                   ui.right_margin
+  SELECTED_INDENT_GUIDE:                ui.indent_guide_active
+  SELECTION_BACKGROUND:                 ui.selection_bg
+  SELECTION_FOREGROUND:                 ui.selection_fg
+  SOFT_WRAP_SIGN_COLOR:                 ui.soft_wrap
+  TEARLINE_COLOR:                       ui.tearline
+  WHITESPACES:                          ui.whitespace
+  ADDED_LINES_COLOR:                    vcs.added
+  MODIFIED_LINES_COLOR:                 vcs.modified
+  DELETED_LINES_COLOR:                  vcs.deleted
+  WHITESPACES_MODIFIED_LINES_COLOR:     vcs.modified
+  DIFF_SEPARATORS_BACKGROUND:           ui.bg_diff_separator
+  FILESTATUS_ADDED:                     vcs.added
+  FILESTATUS_DELETED:                   vcs.deleted
+  FILESTATUS_MERGED:                    vcs.merged
+  FILESTATUS_MODIFIED:                  vcs.modified
+  FILESTATUS_NOT_CHANGED_IMMEDIATE:     vcs.not_changed
+  FILESTATUS_NOT_CHANGED_RECURSIVE:     vcs.not_changed
+  FILESTATUS_UNKNOWN:                   vcs.unknown
+  ANNOTATIONS_COLOR:                    ui.annotations
+  DOCUMENTATION_COLOR:                  ui.bg_documentation
+  ERROR_HINT:                           ui.bg_error_hint
+  FOLDED_TEXT_BORDER_COLOR:             ui.folded_border
+  INFORMATION_HINT:                     ui.bg_info_hint
+  LOOKUP_COLOR:                         ui.bg_info_hint
+  QUESTION_HINT:                        ui.bg_info_hint
+  RECENT_LOCATIONS_SELECTION:           ui.bg_selected_inactive
+  WARNING_HINT:                         ui.bg_warning_hint
+  "ScrollBar.Mac.hoverThumbColor":      ui.scrollbar_thumb_hover
+  "ScrollBar.Mac.thumbColor":           ui.scrollbar_thumb
+
+attributes:
+  TEXT:
+    FOREGROUND:                         syntax.text
+    BACKGROUND:                         ui.bg_editor
+
+  # Keywords
+  DEFAULT_KEYWORD:
+    FOREGROUND:                         syntax.keyword
+  KOTLIN_KEYWORD:
+    FOREGROUND:                         syntax.keyword
+  JAVA_KEYWORD:
+    FOREGROUND:                         syntax.keyword
+
+  # Functions
+  DEFAULT_FUNCTION_DECLARATION:
+    FOREGROUND:                         syntax.function_decl
+    FONT_TYPE:                          __base.font_type.bold
+  DEFAULT_FUNCTION_CALL:
+    FOREGROUND:                         syntax.function_call
+  DEFAULT_INSTANCE_METHOD:
+    FOREGROUND:                         syntax.function_call
+  DEFAULT_STATIC_METHOD:
+    FOREGROUND:                         syntax.function_call
+  KOTLIN_FUNCTION_DECLARATION:
+    FOREGROUND:                         syntax.function_decl
+    FONT_TYPE:                          __base.font_type.bold
+  KOTLIN_FUNCTION_CALL:
+    FOREGROUND:                         syntax.function_call
+
+  # Classes / Types
+  DEFAULT_CLASS_NAME:
+    FOREGROUND:                         syntax.class_name
+    FONT_TYPE:                          __base.font_type.bold
+  DEFAULT_CLASS_REFERENCE:
+    FOREGROUND:                         syntax.class_ref
+  DEFAULT_INTERFACE_NAME:
+    FOREGROUND:                         syntax.interface
+  TYPE_PARAMETER_NAME_ATTRIBUTES:
+    FOREGROUND:                         syntax.type_param
+  ANNOTATION_NAME_ATTRIBUTES:
+    FOREGROUND:                         syntax.annotation
+  ANNOTATION_ATTRIBUTE_NAME_ATTRIBUTES:
+    FOREGROUND:                         syntax.annotation_attr
+  KOTLIN_CLASS:
+    FOREGROUND:                         syntax.class_name
+    FONT_TYPE:                          __base.font_type.bold
+  KOTLIN_OBJECT:
+    FOREGROUND:                         syntax.class_ref
+  KOTLIN_ABSTRACT_CLASS:
+    FOREGROUND:                         syntax.class_ref
+  KOTLIN_ANNOTATION:
+    FOREGROUND:                         syntax.annotation
+  KOTLIN_TYPE_PARAMETER:
+    FOREGROUND:                         syntax.type_param
+
+  # Strings
+  DEFAULT_STRING:
+    FOREGROUND:                         syntax.string
+  DEFAULT_VALID_STRING_ESCAPE:
+    FOREGROUND:                         syntax.string_escape
+  DEFAULT_INVALID_STRING_ESCAPE:
+    FOREGROUND:                         syntax.string_escape_invalid
+    EFFECT_TYPE:                        __base.effect_type.underline
+    EFFECT_COLOR:                       syntax.string_escape_invalid
+  KOTLIN_STRING_TEMPLATE_ENTRY:
+    FOREGROUND:                         syntax.string_template
+
+  # Variables
+  DEFAULT_LOCAL_VARIABLE:
+    FOREGROUND:                         syntax.variable
+  DEFAULT_GLOBAL_VARIABLE:
+    FOREGROUND:                         syntax.variable
+  DEFAULT_INSTANCE_FIELD:
+    FOREGROUND:                         syntax.variable
+  DEFAULT_STATIC_FIELD:
+    FOREGROUND:                         syntax.variable
+  DEFAULT_REASSIGNED_LOCAL_VARIABLE:
+    FOREGROUND:                         syntax.variable
+  DEFAULT_REASSIGNED_PARAMETER:
+    FOREGROUND:                         syntax.reassigned_param
+    FONT_TYPE:                          __base.font_type.italic
+    EFFECT_TYPE:                        __base.effect_type.underline
+    EFFECT_COLOR:                       syntax.reassigned_param_effect
+  KOTLIN_LOCAL_VARIABLE:
+    FOREGROUND:                         syntax.variable
+  KOTLIN_INSTANCE_PROPERTY:
+    FOREGROUND:                         syntax.variable
+  KOTLIN_PACKAGE_PROPERTY:
+    FOREGROUND:                         syntax.variable
+  KOTLIN_BACKING_FIELD_VARIABLE:
+    FOREGROUND:                         syntax.variable
+
+  # Parameters
+  DEFAULT_PARAMETER:
+    FOREGROUND:                         syntax.parameter
+    FONT_TYPE:                          __base.font_type.italic
+  KOTLIN_PARAMETER:
+    FOREGROUND:                         syntax.parameter
+    FONT_TYPE:                          __base.font_type.italic
+  KOTLIN_NAMED_ARGUMENT:
+    FOREGROUND:                         syntax.named_argument
+
+  # Constants / Numbers
+  DEFAULT_NUMBER:
+    FOREGROUND:                         syntax.number
+  DEFAULT_CONSTANT:
+    FOREGROUND:                         syntax.constant
+  DEFAULT_PREDEFINED_SYMBOL:
+    FOREGROUND:                         syntax.predefined
+  KOTLIN_ENUM_ENTRY:
+    FOREGROUND:                         syntax.enum_entry
+
+  # Comments
+  DEFAULT_LINE_COMMENT:
+    FOREGROUND:                         syntax.comment
+    FONT_TYPE:                          __base.font_type.italic
+  DEFAULT_BLOCK_COMMENT:
+    FOREGROUND:                         syntax.comment
+    FONT_TYPE:                          __base.font_type.italic
+  DEFAULT_DOC_COMMENT:
+    FOREGROUND:                         syntax.comment
+    FONT_TYPE:                          __base.font_type.italic
+  DEFAULT_DOC_COMMENT_TAG:
+    FOREGROUND:                         syntax.doc_comment_tag
+    FONT_TYPE:                          __base.font_type.bold_italic
+  DEFAULT_DOC_COMMENT_TAG_VALUE:
+    FOREGROUND:                         syntax.doc_comment_tag_value
+    FONT_TYPE:                          __base.font_type.italic
+  DEFAULT_DOC_MARKUP:
+    FOREGROUND:                         syntax.doc_markup
+
+  # Operators / Punctuation
+  DEFAULT_OPERATION_SIGN:
+    FOREGROUND:                         syntax.operator
+  DEFAULT_DOT:
+    FOREGROUND:                         syntax.operator
+  DEFAULT_SEMICOLON:
+    FOREGROUND:                         syntax.operator
+  DEFAULT_COMMA:
+    FOREGROUND:                         syntax.operator
+  DEFAULT_PARENTHS:
+    FOREGROUND:                         syntax.operator
+  DEFAULT_BRACKETS:
+    FOREGROUND:                         syntax.operator
+  DEFAULT_BRACES:
+    FOREGROUND:                         syntax.operator
+
+  # Language variables
+  KOTLIN_THIS_EXPRESSION:
+    FOREGROUND:                         syntax.this_keyword
+    FONT_TYPE:                          __base.font_type.italic
+  KOTLIN_IT_KEYWORD:
+    FOREGROUND:                         syntax.this_keyword
+    FONT_TYPE:                          __base.font_type.italic
+
+  # Storage / Modifiers
+  DEFAULT_METADATA:
+    FOREGROUND:                         syntax.metadata
+
+  # Identifiers / Labels
+  DEFAULT_IDENTIFIER:
+    FOREGROUND:                         syntax.identifier
+  DEFAULT_LABEL:
+    FOREGROUND:                         syntax.label
+  KOTLIN_LABEL:
+    FOREGROUND:                         syntax.label
+
+  # Bracket matching
+  MATCHED_BRACE_ATTRIBUTES:
+    FOREGROUND:                         syntax.matched_brace_fg
+    BACKGROUND:                         ui.bg_matched_brace
+    FONT_TYPE:                          __base.font_type.bold
+  UNMATCHED_BRACE_ATTRIBUTES:
+    FOREGROUND:                         syntax.unmatched_brace_fg
+    BACKGROUND:                         ui.bg_unmatched_brace
+    FONT_TYPE:                          __base.font_type.bold
+
+  # Search
+  SEARCH_RESULT_ATTRIBUTES:
+    BACKGROUND:                         ui.bg_search_result
+    EFFECT_TYPE:                        __base.effect_type.underline
+    EFFECT_COLOR:                       syntax.search_effect
+  WRITE_SEARCH_RESULT_ATTRIBUTES:
+    BACKGROUND:                         ui.bg_write_search
+    EFFECT_TYPE:                        __base.effect_type.underline
+    EFFECT_COLOR:                       syntax.write_search_effect
+  TEXT_SEARCH_RESULT_ATTRIBUTES:
+    BACKGROUND:                         ui.bg_text_search
+    EFFECT_TYPE:                        __base.effect_type.underline
+    EFFECT_COLOR:                       syntax.text_search_effect
+
+  # Errors / Warnings
+  ERRORS_ATTRIBUTES:
+    EFFECT_TYPE:                        __base.effect_type.wave
+    EFFECT_COLOR:                       diagnostic.error
+  WARNING_ATTRIBUTES:
+    EFFECT_TYPE:                        __base.effect_type.wave
+    EFFECT_COLOR:                       diagnostic.warning
+  DEPRECATED_ATTRIBUTES:
+    EFFECT_TYPE:                        __base.effect_type.strikethrough
+    EFFECT_COLOR:                       diagnostic.deprecated
+  MARKED_FOR_REMOVAL_ATTRIBUTES:
+    EFFECT_TYPE:                        __base.effect_type.strikethrough
+    EFFECT_COLOR:                       diagnostic.error
+  NOT_USED_ELEMENT_ATTRIBUTES:
+    FOREGROUND:                         ui.fg_not_used
+  DUPLICATE_FROM_SERVER:
+    EFFECT_TYPE:                        __base.effect_type.wave
+    EFFECT_COLOR:                       diagnostic.warning
+
+  # Diff
+  DIFF_INSERTED:
+    BACKGROUND:                         vcs.diff_inserted
+  DIFF_DELETED:
+    BACKGROUND:                         vcs.diff_deleted
+  DIFF_MODIFIED:
+    BACKGROUND:                         vcs.diff_modified
+  DIFF_CONFLICT:
+    BACKGROUND:                         vcs.diff_conflict
+
+  # Inlay hints
+  INLINE_PARAMETER_HINT:
+    FOREGROUND:                         ui.fg_inline_hint
+    BACKGROUND:                         ui.bg_inline_hint
+  INLINE_PARAMETER_HINT_CURRENT:
+    FOREGROUND:                         ui.fg_inline_hint_active
+    BACKGROUND:                         ui.bg_inline_hint_active
+  INLINE_PARAMETER_HINT_HIGHLIGHTED:
+    FOREGROUND:                         ui.fg_inline_hint_active
+    BACKGROUND:                         ui.bg_inline_hint_active
+
+  # Injected language
+  INJECTED_LANGUAGE_FRAGMENT:
+    BACKGROUND:                         ui.bg_injected
+
+  # Breadcrumbs
+  BREADCRUMBS_DEFAULT:
+    FOREGROUND:                         ui.fg_breadcrumb
+  BREADCRUMBS_HOVERED:
+    FOREGROUND:                         ui.fg_strong
+    BACKGROUND:                         ui.bg_breadcrumb_hovered
+  BREADCRUMBS_CURRENT:
+    FOREGROUND:                         ui.fg_strong
+  BREADCRUMBS_INACTIVE:
+    FOREGROUND:                         ui.fg_breadcrumb_inactive
+
+  # TODO
+  TODO_DEFAULT_ATTRIBUTES:
+    FOREGROUND:                         syntax.todo
+    FONT_TYPE:                          __base.font_type.bold_italic
+    ERROR_STRIPE_COLOR:                 syntax.todo_stripe
+
+  # Folded text
+  FOLDED_TEXT_ATTRIBUTES:
+    FOREGROUND:                         ui.fg_folded
+    BACKGROUND:                         ui.bg_folded_text
+
+  # HTML / XML
+  HTML_TAG_NAME:
+    FOREGROUND:                         syntax.tag_name
+  HTML_ATTRIBUTE_NAME:
+    FOREGROUND:                         syntax.attribute_name
+  HTML_ATTRIBUTE_VALUE:
+    FOREGROUND:                         syntax.attribute_value
+  HTML_TAG:
+    FOREGROUND:                         syntax.tag_punctuation
+  HTML_ENTITY_REFERENCE:
+    FOREGROUND:                         syntax.entity_ref
+  XML_TAG_NAME:
+    FOREGROUND:                         syntax.tag_name
+  XML_ATTRIBUTE_NAME:
+    FOREGROUND:                         syntax.attribute_name
+  XML_ATTRIBUTE_VALUE:
+    FOREGROUND:                         syntax.attribute_value
+  XML_TAG:
+    FOREGROUND:                         syntax.tag_punctuation
+  XML_ENTITY_REFERENCE:
+    FOREGROUND:                         syntax.entity_ref
+
+  # CSS
+  "CSS.PROPERTY_NAME":
+    FOREGROUND:                         syntax.css_property
+  "CSS.PROPERTY_VALUE":
+    FOREGROUND:                         syntax.css_value
+  "CSS.TAG_NAME":
+    FOREGROUND:                         syntax.css_tag
+  "CSS.CLASS_NAME":
+    FOREGROUND:                         syntax.css_class
+  "CSS.ID":
+    FOREGROUND:                         syntax.css_id
+  "CSS.PSEUDO":
+    FOREGROUND:                         syntax.css_pseudo
+  "CSS.FUNCTION":
+    FOREGROUND:                         syntax.css_function
+  "CSS.NUMBER":
+    FOREGROUND:                         syntax.css_number
+  "CSS.COLOR":
+    FOREGROUND:                         syntax.css_color
+  "CSS.URL":
+    FOREGROUND:                         syntax.css_url
+  "CSS.KEYWORD":
+    FOREGROUND:                         syntax.css_keyword
+
+  # JSON
+  "JSON.PROPERTY_KEY":
+    FOREGROUND:                         syntax.json_key
+  "JSON.STRING":
+    FOREGROUND:                         syntax.json_string
+  "JSON.NUMBER":
+    FOREGROUND:                         syntax.json_number
+  "JSON.KEYWORD":
+    FOREGROUND:                         syntax.json_keyword
+
+  # YAML
+  YAML_SCALAR_KEY:
+    FOREGROUND:                         syntax.yaml_key
+  YAML_SCALAR_VALUE:
+    FOREGROUND:                         syntax.yaml_value
+  YAML_ANCHOR:
+    FOREGROUND:                         syntax.yaml_anchor
+
+  # Markdown
+  MARKDOWN_HEADER_LEVEL_1:
+    FOREGROUND:                         syntax.md_header
+    FONT_TYPE:                          __base.font_type.bold
+  MARKDOWN_HEADER_LEVEL_2:
+    FOREGROUND:                         syntax.md_header
+    FONT_TYPE:                          __base.font_type.bold
+  MARKDOWN_HEADER_LEVEL_3:
+    FOREGROUND:                         syntax.md_header
+    FONT_TYPE:                          __base.font_type.bold
+  MARKDOWN_HEADER_LEVEL_4:
+    FOREGROUND:                         syntax.md_header
+  MARKDOWN_HEADER_LEVEL_5:
+    FOREGROUND:                         syntax.md_header
+  MARKDOWN_HEADER_LEVEL_6:
+    FOREGROUND:                         syntax.md_header
+  MARKDOWN_BOLD:
+    FOREGROUND:                         syntax.md_bold
+    FONT_TYPE:                          __base.font_type.bold
+  MARKDOWN_ITALIC:
+    FOREGROUND:                         syntax.md_italic
+    FONT_TYPE:                          __base.font_type.italic
+  MARKDOWN_CODE_SPAN:
+    FOREGROUND:                         syntax.md_code
+  MARKDOWN_LINK_DESTINATION:
+    FOREGROUND:                         syntax.md_link_dest
+  MARKDOWN_LINK_TEXT:
+    FOREGROUND:                         syntax.md_link_text
+  MARKDOWN_BLOCK_QUOTE:
+    FOREGROUND:                         syntax.md_block_quote
+    FONT_TYPE:                          __base.font_type.italic
+  MARKDOWN_LIST_MARKER:
+    FOREGROUND:                         syntax.md_list_marker
+  MARKDOWN_HORIZONTAL_RULE:
+    FOREGROUND:                         syntax.md_hr
+
+  # RegExp
+  "REGEXP.META":
+    FOREGROUND:                         syntax.regex_meta
+  "REGEXP.CHAR_CLASS":
+    FOREGROUND:                         syntax.regex_char_class
+  "REGEXP.QUOTE":
+    FOREGROUND:                         syntax.regex_quote
+  "REGEXP.QUANTIFIER":
+    FOREGROUND:                         syntax.regex_quantifier
+
+  # Shell
+  "BASH.EXTERNAL_COMMAND":
+    FOREGROUND:                         syntax.shell_external
+  "BASH.INTERNAL_COMMAND":
+    FOREGROUND:                         syntax.shell_internal
+    FONT_TYPE:                          __base.font_type.bold
+
+  # Console
+  CONSOLE_NORMAL_OUTPUT:
+    FOREGROUND:                         syntax.console_normal
+  CONSOLE_ERROR_OUTPUT:
+    FOREGROUND:                         syntax.console_error
+  CONSOLE_USER_INPUT:
+    FOREGROUND:                         syntax.console_input
+  CONSOLE_SYSTEM_OUTPUT:
+    FOREGROUND:                         syntax.console_system
+  LOG_ERROR_OUTPUT:
+    FOREGROUND:                         syntax.log_error
+  LOG_WARNING_OUTPUT:
+    FOREGROUND:                         syntax.log_warning
+  LOG_INFO_OUTPUT:
+    FOREGROUND:                         syntax.log_info
+  LOG_DEBUG_OUTPUT:
+    FOREGROUND:                         syntax.log_debug
+
+  # Terminal
+  TERMINAL_COMMAND_TO_RUN_USING_IDE:
+    FOREGROUND:                         syntax.terminal_command

@@ -1,0 +1,14 @@
+{
+  "name": "gyoon-theme",
+  "displayName": "Gyoon Theme",
+  "publisher": "inticoy",
+  "description": "A collection of carefully crafted dark and light themes with gold and green accent variants.",
+  "version": "0.1.0",
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "repository": "https://github.com/inticoy/gyoon-theme"
+}
