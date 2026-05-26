@@ -70,6 +70,7 @@ export function generateIntellijThemeJson(
     dark: variant.isDark,
     author: "inticoy",
     editorScheme,
+    parentTheme: variant.isDark ? "Islands Dark" : "Islands Light",
     ui,
   };
 

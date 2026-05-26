@@ -3,7 +3,7 @@
   "displayName": "Gyoon Theme",
   "publisher": "inticoy",
   "description": "A collection of carefully crafted dark and light themes with gold and green accent variants.",
-  "version": "0.1.0",
+  "version": "26.5.26",
   "engines": {
     "vscode": "^1.60.0"
   },

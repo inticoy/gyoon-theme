@@ -13,14 +13,21 @@
   focusColor:                                   ui.focus
   focusedBorderColor:                           ui.focus_border
 
+"Islands":                                      1
+"MainWindow.background":                        ui.bg
 "Panel.background":                             ui.bg_panel
 "MainToolbar.background":                       ui.bg
+"MainToolbar.borderColor":                      "#00000000"
 "TitlePane.background":                         ui.bg
 "Editor.background":                            ui.bg_editor
+"Island.borderColor":                           ui.bg_panel
 
 EditorTabs:
-  background:                                   ui.bg
+  background:                                   ui.bg_editor
   underlinedTabBackground:                      ui.bg_tab_active
+  inactiveUnderlinedTabBackground:              ui.bg_selected_inactive
+  underlinedBorderColor:                        accent.primary
+  inactiveUnderlinedTabBorderColor:             accent.primary
   underlineColor:                               accent.primary
   underlineHeight:                              __base.editor_tabs.underlineHeight
   hoverBackground:                              ui.bg_hover
@@ -28,19 +35,20 @@ EditorTabs:
 
 ToolWindow:
   Header:
-    background:                                 ui.bg
-    inactiveBackground:                         ui.bg
+    background:                                 ui.bg_panel
+    inactiveBackground:                         ui.bg_panel
   HeaderTab:
     selectedBackground:                         ui.bg_selected_inactive
     hoverBackground:                            ui.bg_hover
     underlineColor:                             accent.primary
-  background:                                   ui.bg
+  background:                                   ui.bg_panel
+  "Stripe.borderColor":                         "#00000000"
   "Button.selectedBackground":                  ui.bg_selected_inactive
   "Button.hoverBackground":                     ui.bg_hover
 
 StatusBar:
   background:                                   status.bar_bg
-  borderColor:                                  status.bar_border
+  borderColor:                                  "#00000000"
   hoverBackground:                              status.bar_hover
 
 NavBar:
